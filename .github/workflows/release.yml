@@ -12,8 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
-        with: python-version: '3.x'
-      - run: pip install --upgrade build twine
+        with:
+          python-version: '3.x'
+      - run: pip install --upgrade build
       - run: python -m build
       - uses: softprops/action-gh-release@v1
         with:
