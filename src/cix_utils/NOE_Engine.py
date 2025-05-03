@@ -62,7 +62,7 @@ def get_data_info(d_type : noe_data_type_t) -> tuple:
         type_info = (np.int32, -2147483648, 2147483647, D_INT32)
     elif d_type == noe_data_type_t.NOE_DATA_TYPE_U32:
         type_info = (np.uint32, 0, 4294967295, D_UINT32)
-    elif d_type == noe_data_type_t.NOE_DATA_TYPE_F16:
+    elif d_type == noe_data_type_t.NOE_DATA_TYPE_f16:
         type_info = (np.float16, 0, 0, D_INT8)
     else:
         raise NotImplementedError(f"Not Implement d_type {d_type}")
